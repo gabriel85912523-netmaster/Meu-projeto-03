@@ -18,6 +18,27 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
-    
-    
+
 }
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.logo::first-letter {
+    color: #730707;
+}
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 100px;
+}
+.menu a:hover{
+    color: #b60000;
+}
+
