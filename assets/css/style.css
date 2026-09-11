@@ -4,96 +4,58 @@
   padding: 0;
   box-sizing: border-box;
   }
-
 html {
 scroll-behavior: smooth;
 }
-
 body {
 font-family: Arial, Helvetica, sans-serif;
 background-color: #111;
 color: #fff;
 line-height: 1.6;
 }
-
-/* ========================================
-CABEÇALHO
-======================================== */
-
 .header {
 width: 100%;
 min-height: 80px;
-
-```
 display: flex;
 align-items: center;
 justify-content: space-between;
-
 padding: 0 8%;
-
 background-color: #0a0a0a;
-
 position: sticky;
 top: 0;
 z-index: 1000;
-
 border-bottom: 1px solid #2a2a2a;
-```
-
 }
-
-/* ========================================
-LOGO
-======================================== */
-
 .logo {
 font-size: 1.5rem;
 font-weight: bold;
 letter-spacing: 2px;
 }
-
 .logo a {
 color: #fff;
 text-decoration: none;
 }
-
 .logo span {
 color: #d32f2f;
 }
-
-/* ========================================
-MENU
-======================================== */
-
 .menu {
 display: flex;
 gap: 25px;
 }
-
 .menu a {
 color: #fff;
 text-decoration: none;
 font-size: 0.95rem;
 transition: 0.3s;
 }
-
 .menu a:hover {
 color: #d32f2f;
 }
-
-/* ========================================
-HERO
-======================================== */
-
 .hero {
 min-height: 90vh;
-
-```
 display: flex;
 align-items: center;
-
 padding: 80px 8%;
-
 background:
     linear-gradient(
         90deg,
@@ -105,14 +67,10 @@ background:
 
 background-size: cover;
 background-position: center;
-```
-
 }
-
 .hero-conteudo {
 max-width: 650px;
 }
-
 .subtitulo {
 color: #d32f2f;
 font-size: 0.8rem;
@@ -120,158 +78,88 @@ font-weight: bold;
 letter-spacing: 3px;
 margin-bottom: 15px;
 }
-
 .hero h1 {
 font-size: clamp(3rem, 8vw, 6rem);
 line-height: 1;
 margin-bottom: 25px;
 text-transform: uppercase;
 }
-
 .hero h1 span {
 color: #d32f2f;
 }
-
 .descricao {
 max-width: 550px;
 font-size: 1.1rem;
 color: #ccc;
 margin-bottom: 30px;
 }
-
-/* ========================================
-BOTÕES
-======================================== */
-
 .botao {
 display: inline-block;
-
-```
 background-color: #d32f2f;
 color: #fff;
-
 padding: 14px 30px;
-
 border: none;
 text-decoration: none;
-
 font-weight: bold;
-
 cursor: pointer;
-
 transition: 0.3s;
-```
-
 }
-
 .botao:hover {
 background-color: #fff;
 color: #111;
-
-```
 transform: translateY(-3px);
-```
-
 }
-
-/* ========================================
-CONTAINER
-======================================== */
-
 .container {
 max-width: 1200px;
-
-```
 margin: auto;
-
 padding: 100px 30px;
-
 display: flex;
 align-items: center;
-
 gap: 70px;
-```
-
 }
-
-/* ========================================
-SOBRE O JOGO
-======================================== */
-
 .sobre {
 background-color: #161616;
 }
-
 .texto-sobre,
 .texto-personagem {
 flex: 1;
 }
-
 .texto-sobre h2,
 .texto-personagem h2,
 .quiz h2 {
 font-size: 2.5rem;
 margin-bottom: 25px;
 }
-
 .texto-sobre p,
 .texto-personagem p {
 color: #bbb;
 margin-bottom: 18px;
 }
-
-/* ========================================
-IMAGENS
-======================================== */
-
 .imagem-sobre,
 .imagem-personagem {
 flex: 1;
 }
-
 .imagem-sobre img,
 .imagem-personagem img {
 width: 100%;
-
-```
 display: block;
-
 border-radius: 6px;
-
 transition: transform 0.4s ease;
-```
-
 }
-
 .imagem-sobre img:hover,
 .imagem-personagem img:hover {
 transform: scale(1.03);
 }
-
-/* ========================================
-PERSONAGEM
-======================================== */
-
 .personagem {
 background-color: #0d0d0d;
 }
-
-/* ========================================
-QUIZ
-======================================== */
-
 .quiz {
 min-height: 500px;
-
-```
 display: flex;
 align-items: center;
 justify-content: center;
-
 text-align: center;
-
 padding: 80px 20px;
-
 background:
     linear-gradient(
         rgba(0, 0, 0, 0.8),
@@ -281,89 +169,58 @@ background:
 
 background-size: cover;
 background-position: center;
-```
-
 }
-
 .quiz-conteudo {
 max-width: 700px;
 }
-
 .quiz h2 {
 margin-bottom: 20px;
 }
-
 .quiz p {
-color: #ccc;
+color:#ccc;
 margin-bottom: 30px;
 }
-
-/* ========================================
-RODAPÉ
-======================================== */
-
 .footer {
 text-align: center;
-
-```
 padding: 60px 20px;
-
 background-color: #050505;
-
 border-top: 1px solid #222;
-```
-
 }
-
 .footer .logo {
 margin-bottom: 20px;
 }
-
 .footer p {
 color: #888;
 margin-bottom: 10px;
 }
-
 .copyright {
 font-size: 0.8rem;
 margin-top: 20px;
+background-color: #8b0000;
 }
-
-/* ========================================
-RESPONSIVIDADE
-======================================== */
-
 @media (max-width: 800px) {
-
-```
 .header {
     flex-direction: column;
     padding: 20px;
     gap: 20px;
 }
-
 .menu {
     gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .container {
     flex-direction: column;
     gap: 40px;
     padding: 70px 25px;
 }
-
 .texto-sobre h2,
 .texto-personagem h2,
 .quiz h2 {
     font-size: 2rem;
 }
-
 .hero {
     text-align: center;
     justify-content: center;
 }
-```
-
 }

@@ -98,3 +98,8 @@ background-color: #000000;
 color: #888888;
 margin-top: 40px;
 }
+.copyright {
+  text-align: center;
+  font-size: medium;
+  background-color: #ffab00;
+}
