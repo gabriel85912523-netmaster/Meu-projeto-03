@@ -224,3 +224,10 @@ background-color: #8b0000;
     justify-content: center;
 }
 }
+.triste {
+    align-items: center;
+    text-align: center;
+    color: #8b0000;
+    background-color: darkgoldenrod;
+    
+}
