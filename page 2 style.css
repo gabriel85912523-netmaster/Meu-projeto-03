@@ -1,80 +1,447 @@
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
 
 body {
-font-family: Arial, Helvetica, sans-serif;
-background-color: #121212;
-color: #ffffff;
-line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0b0b0b;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 .cabecalho {
-text-align: center;
-padding: 50px 20px;
-background-color: #000000;
-border-bottom: 3px solid #e60000;
+    width: 100%;
+    min-height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    background: rgba(8, 8, 8, 0.97);
+    border-bottom: 1px solid #252525;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-.cabecalho h1 {
-font-size: 3rem;
-margin-bottom: 10px;
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
-.cabecalho p {
-color: #cccccc;
-font-size: 1.1rem;
+
+.logo span {
+    color: #d32f2f;
 }
-.conteudo {
-max-width: 1100px;
-margin: auto;
-padding: 50px 20px;
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
-.apresentacao {
-text-align: center;
+
+.menu a {
+    font-size: 0.9rem;
+    color: #ccc;
+    transition: 0.3s;
 }
-.logo-rockstar {
-width: 180px;
-max-width: 100%;
-margin-bottom: 30px;
-border-radius: 10px;
+
+.menu a:hover,
+.menu a.ativo {
+    color: #d32f2f;
 }
-.apresentacao h2 {
-font-size: 2rem;
-margin-bottom: 30px;
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 100px 8%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.2)
+        ),
+        url("./assets/img.download/rockstar_games_logo_by_nathandasilva_dgoqq65-fullview.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+.hero-conteudo {
+    max-width: 700px;
+}
+
+.subtitulo {
+    color: #d32f2f;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    line-height: 0.95;
+    font-weight: 900;
+    margin-bottom: 30px;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    color: #d32f2f;
+}
+
+.descricao {
+    max-width: 550px;
+    color: #ccc;
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.botao {
+    display: inline-block;
+
+    padding: 15px 35px;
+
+    background: #d32f2f;
+    color: #fff;
+
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+
+    border: 1px solid #d32f2f;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: transparent;
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+.jogos {
+    padding: 100px 8%;
+    background: #101010;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.titulo-secao {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+.titulo-secao h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 20px;
+}
+
+.titulo-secao h2 span {
+    color: #d32f2f;
+}
+
+.titulo-secao > p:last-child {
+    color: #999;
+    font-size: 1rem;
+}
+
+/* =========================
+   CARDS DOS JOGOS
+========================= */
+
 .lista-jogos {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-gap: 20px;
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 35px;
 }
+
 .jogo {
-background-color: #1e1e1e;
-padding: 25px;
-border-radius: 10px;
-text-align: left;
-border-left: 4px solid #e60000;
-transition: 0.3s;
+    background: #171717;
+    border: 1px solid #292929;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
 }
+
 .jogo:hover {
-transform: translateY(-8px);
-background-color: #292929;
+    transform: translateY(-10px);
+
+    border-color: #d32f2f;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
 }
+
+
+.imagem-jogo {
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    background: #222;
+}
+
+.imagem-jogo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.jogo:hover .imagem-jogo img {
+    transform: scale(1.07);
+}
+
+.numero {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    padding: 7px 15px;
+
+    background: #d32f2f;
+    color: #fff;
+
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+/* CONTEÚDO DOS CARDS */
+
+.jogo-conteudo {
+    padding: 30px;
+}
+
+.categoria {
+    color: #d32f2f;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
 .jogo h3 {
-color: #e60000;
-margin-bottom: 10px;
+    font-size: 1.6rem;
+    margin: 15px 0;
 }
+
 .jogo p {
-color: #cccccc;
+    color: #aaa;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
 }
+
+.link-jogo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    border-bottom: 2px solid #d32f2f;
+    padding-bottom: 5px;
+
+    transition: 0.3s;
+}
+
+.link-jogo span {
+    color: #d32f2f;
+    font-size: 1.2rem;
+}
+
+.link-jogo:hover {
+    color: #d32f2f;
+    gap: 18px;
+}
+
+.destaque-final {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 80px 25px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.85),
+            rgba(0, 0, 0, 0.9)
+        ),
+        url("./assets/img.download/red-dead-redemption-2-hero-banner-03-ps4-us-07jun18.avif");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.destaque-conteudo {
+    max-width: 750px;
+}
+
+.destaque-final h2 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.destaque-final p:not(.subtitulo) {
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
 .rodape {
-text-align: center;
-padding: 20px;
-background-color: #000000;
-color: #888888;
-margin-top: 40px;
+    text-align: center;
+    padding: 60px 20px;
+
+    background: #050505;
+    border-top: 1px solid #252525;
 }
-.copyright {
-  text-align: center;
-  font-size: medium;
-  background-color: #ffab00;
+
+.rodape .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.rodape p {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.rodape .copyright {
+    margin-top: 25px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+@media (max-width: 900px) {
+
+    .cabecalho {
+        padding: 20px 5%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 550px;
+        padding: 80px 6%;
+    }
+
+    .jogos {
+        padding: 80px 5%;
+    }
+
+    .lista-jogos {
+        gap: 25px;
+    }
+
+    .imagem-jogo {
+        height: 230px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .cabecalho {
+        position: relative;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 0.8rem;
+    }
+
+    .hero {
+        min-height: 500px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .descricao {
+        font-size: 1rem;
+    }
+
+    .lista-jogos {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem-jogo {
+        height: 250px;
+    }
+
+    .jogo-conteudo {
+        padding: 25px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 2.3rem;
+    }
+
+    .destaque-final h2 {
+        font-size: 2.5rem;
+    }
+
 }

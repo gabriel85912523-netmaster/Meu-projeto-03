@@ -1,89 +1,288 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./page 2 style.css">
 
-<title>Rockstar Games | Principais Jogos</title>
-<nav class="menu">
-            <a href="./page2.html">Início</a>
-            <a href="#rdr2">RDR2</a>
-            <a href="#Gta 5">Gta 5</a>
-            <a href="./page3.html">Gta 6</a>
-        </nav>
+    <meta name="description" content="Conheça os principais jogos desenvolvidos pela Rockstar Games.">
 
+    <title>Rockstar Games | Meus Games</title>
+
+    <link rel="stylesheet" href="./page 2 style.css">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
+    <header class="cabecalho">
 
-<header class="cabecalho">
-    <h1>Rockstar Games</h1>
-    <p>Conheça alguns dos principais jogos desenvolvidos pela Rockstar Games.</p>
-</header>
+        <a href="./index.html" class="logo">
+            MEUS <span>GAMES</span>
+        </a>
 
-<main class="conteudo">
+        <nav class="menu">
+            <a href="./page2.html" class="ativo">ROCKSTAR GAMES | MEUS GAMES</a>
+            <a href="./index.html#rdr2">RED DEAD REDEMPTION 2 </a>
+        </nav>
 
-    <section class="apresentacao">
+    </header>
 
-        <img 
-            src="./assets/img.download/rockstar_games_logo_by_nathandasilva_dgoqq65-fullview.jpg"
-            alt="Logo da Rockstar Games"
-            class="logo-rockstar"
-        >
+    <main>
 
-        <h2>Principais Jogos</h2>
+        <section class="hero">
 
-        <div class="lista-jogos">
+            <div class="hero-conteudo">
 
-            <article class="jogo">
-                <h3>Grand Theft Auto V</h3>
-                <p>
-                    Um dos jogos mais populares da Rockstar Games,
-                    conhecido por seu enorme mundo aberto.
+                <p class="subtitulo">
+                    GRANDES EXPERIÊNCIAS
                 </p>
-            </article>
 
-            <article class="jogo">
-                <h3>Red Dead Redemption 2</h3>
-                <p>
-                    Uma aventura de mundo aberto ambientada no
-                    Velho Oeste americano.
+                <h1>
+                    ROCKSTAR<br>
+                    <span>GAMES</span>
+                </h1>
+
+                <p class="descricao">
+                    Mundos inesquecíveis, histórias marcantes
+                    e aventuras que transformaram a indústria
+                    dos videogames.
                 </p>
-            </article>
+
+                <a href="#jogos" class="botao">
+                    Explorar jogos
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="jogos" id="jogos">
+
+            <div class="container">
+
+                <div class="titulo-secao">
+
+                    <p class="subtitulo">O UNIVERSO ROCKSTAR</p>
+
+                    <h2>Principais <span>Jogos</span></h2>
+
+                    <p>
+                        Explore alguns dos títulos mais conhecidos
+                        e descubra diferentes universos dos games.
+                    </p>
+
+                </div>
+
+                <div class="lista-jogos">
+
         
+                    <article class="jogo">
 
-            <article class="jogo">
-                <h3>Grand Theft Auto VI</h3>
-                <p>
-                    O próximo grande lançamento da famosa franquia
-                    Grand Theft Auto.
+                        <div class="imagem-jogo gta">
+                            <img
+                                src="./assets/img.download/1564264.jpg"
+                                alt="Grand Theft Auto V"
+                                loading="lazy"
+                            >
+                            <span class="numero">01</span>
+                        </div>
+
+                        <div class="jogo-conteudo">
+
+                            <span class="categoria">
+                                MUNDO ABERTO
+                            </span>
+
+                            <h3>Grand Theft Auto V</h3>
+
+                            <p>
+                                Explore Los Santos, uma cidade cheia
+                                de possibilidades, acompanhando as
+                                histórias de Michael, Franklin e Trevor.
+                            </p>
+
+                            <a href="https://www.rockstargames.com/gta-v"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="link-jogo">
+                                Conhecer jogo
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <article class="jogo destaque">
+
+                        <div class="imagem-jogo rdr">
+
+                            <img
+                                src="./assets/img.download/red-dead-redemption-2-hero-banner-03-ps4-us-07jun18.avif"
+                                alt="Red Dead Redemption 2"
+                                loading="lazy"
+                            >
+
+                            <span class="numero">02</span>
+
+                        </div>
+
+                        <div class="jogo-conteudo">
+
+                            <span class="categoria">
+                                AVENTURA E FAROESTE
+                            </span>
+
+                            <h3>Red Dead Redemption 2</h3>
+
+                            <p>
+                                Viva a jornada de Arthur Morgan
+                                em um mundo aberto ambientado
+                                no fim da era do Velho Oeste.
+                            </p>
+
+                            <a href="./index.html#rdr2"
+                               class="link-jogo">
+                                Ver página do jogo
+                                <span>→</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                
+                    <article class="jogo">
+
+                        <div class="imagem-jogo gta6">
+
+                            <img
+                                src="./assets/img.download/Imagem-mostra-capa-oficial-do-GTA-VI.webp"
+                                alt="Grand Theft Auto VI"
+                                loading="lazy"
+                            >
+
+                            <span class="numero">03</span>
+
+                        </div>
+
+                        <div class="jogo-conteudo">
+
+                            <span class="categoria">
+                                GRAND THEFT AUTO
+                            </span>
+
+                            <h3>Grand Theft Auto VI</h3>
+
+                            <p>
+                                Conheça o próximo capítulo da
+                                franquia GTA, ambientado no
+                                estado fictício de Leonida.
+                            </p>
+
+                            <a href="https://www.rockstargames.com/VI"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="link-jogo">
+                                Site oficial
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+            
+                    <article class="jogo">
+
+                        <div class="imagem-jogo bully">
+
+                            <img
+                                src="./assets/img.download/R (1).jfif"
+                                alt="Bully"
+                                loading="lazy"
+                            >
+
+                            <span class="numero">04</span>
+
+                        </div>
+
+                        <div class="jogo-conteudo">
+
+                            <span class="categoria">
+                                AVENTURA
+                            </span>
+
+                            <h3>Bully</h3>
+
+                            <p>
+                                Acompanhe Jimmy Hopkins em uma
+                                escola cheia de desafios,
+                                personagens e situações divertidas.
+                            </p>
+
+                            <a href="https://www.rockstargames.com/games/bully"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="link-jogo">
+                                Conhecer jogo
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- DESTAQUE FINAL -->
+        <section class="destaque-final">
+
+            <div class="destaque-conteudo">
+
+                <p class="subtitulo">
+                    VIVA GRANDES HISTÓRIAS
                 </p>
-            </article>
 
-            <article class="jogo">
-                <h3>Bully</h3>
+                <h2>
+                    Cada jogo,<br>
+                    um novo universo.
+                </h2>
+
                 <p>
-                    Um jogo de aventura que acompanha a vida de um
-                    estudante em uma escola.
+                    Descubra mundos, personagens e aventuras
+                    que fazem parte da história dos videogames.
                 </p>
-            </article>
 
-        </div>
+                <a href="./index.html" class="botao">
+                    Voltar ao início
+                </a>
 
-    </section>
+            </div>
 
-</main>
+        </section>
 
-<footer class="rodape">
-    <p>Site informativo sobre os principais jogos da Rockstar Games.</p>
-</footer>
-```
-<p class="copyright">
-    &copy;2026 Meus Games.Todos os direitos reservados.
+    </main>
+    <footer class="rodape">
+
+        <a href="./index.html" class="logo">
+            MEUS <span>GAMES</span>
+        </a>
+
+        <p>
+            Projeto desenvolvido para fins educacionais e informativos.
+        </p>
+
+        <p class="copyright">
+            &copy; 2026 Meus Games. Todos os direitos reservados.
+        </p>
+
+    </footer>
 
 </body>
-
 </html>
