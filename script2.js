@@ -150,4 +150,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     console.log("Meus Games carregado com sucesso!");
 
-});
+})
